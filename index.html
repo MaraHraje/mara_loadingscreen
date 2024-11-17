@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loadingScreen">
+        <div class="background">
+            <!-- Obrázek na pozadí -->
+            <div class="image"></div>
+        </div>
+
+        <div class="overlay">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <!-- Malý text vpravo nahoře -->
+        <div class="created-by">vytvořil: Mára</div>
+
+        <!-- Text uprostřed pro mezerník -->
+        <div class="audio-instruction">
+            Kliknutím na mezerník zastavíte hudbu
+            <div class="audio-note">(Pokud nefunguje ztlumení, klikněte do loadingscreenu a zkuste znovu mezerník)</div>
+        </div>
+
+        <!-- Hudba na pozadí -->
+        <audio id="backgroundMusic" autoplay loop>
+            <source src="music/background.mp3" type="audio/mpeg">
+            Váš prohlížeč nepodporuje audio element.
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
